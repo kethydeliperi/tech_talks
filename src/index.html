@@ -8,15 +8,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="Logo da EBAC">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em 30d 17h 20min 56s</p class="hero__text">
+            <p class="hero__text">
+                O maior evento de tecnologia do Brasil <span id="accountant"></span>
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2024 às 19h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
-
+    <section class="event event--front-end event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">
+                    Front-end refere-se ao desenvolvimento da interface de usuário visível, utilizando tecnologias como HTML, CSS e JavaScript para criar elementos interativos e layouts responsivos em sites e aplicativos, proporcionando uma experiência amigável e visualmente atrativa.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--ui-ux">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    UX (User Experience) é voltado para entender as necessidades dos usuários, utilizando pesquisas e prototipagem para aprimorar a usabilidade. UI (User Interface) foca no design visual, garantindo elementos gráficos atrativos e intuitivos. A colaboração entre UX e UI é fundamental para criar produtos digitais que ofereçam não apenas funcionalidade eficaz, mas também uma experiência estética e intuitiva, contribuindo para o sucesso e apelo do produto no mercado.</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-sciense event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Sciense</h2>
+                <p class="event__details__description">
+                    A Ciência de dados utiliza métodos científicos para analisar dados, aplicando estatísticas e aprendizado de máquina para extrair insights valiosos e apoiar a tomada de decisões informadas em diversos setores, contribuindo para a inteligência e eficiência na gestão de dados e informações.</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Sciense">
+        </div>
+    </section>
+    <section class="event event--back-end">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    Back-end trata da parte não visível de um sistema, gerenciando servidores, processando dados e interagindo com bancos de dados. Linguagens como Python, Java ou Node.js são comumente empregadas para desenvolver a lógica de negócios e garantir o funcionamento eficiente de aplicativos e sites.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-End">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
